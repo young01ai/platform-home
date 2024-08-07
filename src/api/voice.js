@@ -1,7 +1,7 @@
 import { commonGet, commonPost } from './util'
 
 // const baseUrl = 'https://tts-demo.01ww.xyz'
-const baseUrl = 'http://127.0.0.1:7755'
+const baseUrl = 'http://180.184.134.254:7855'
 
 export function getConfig() {
   return commonGet(`/v1/rtc/config`, false, baseUrl).catch(err => {
