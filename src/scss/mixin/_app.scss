@@ -1,0 +1,17 @@
+// Path: src/pages/assistant.scss
+@import '@/scss/rtl.scss';
+
+.aside-list{
+  @include bodyAr {
+    margin-right: unset;
+    margin-left: 8px;
+  }
+}
+
+.mr-auto {
+  @include bodyAr {
+    margin-left: auto;
+    margin-right: unset
+  }
+}
+

@@ -1,0 +1,17 @@
+.language-container{
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    font-size: 16px;
+    .language-name{
+        color: white !important;
+        margin-right: 15px;
+        line-height: 30px;
+    }
+    .language-name:hover{
+        border-bottom: 2px solid white;
+    }
+    .language-checked{
+        border-bottom: 2px solid white;
+    }
+}

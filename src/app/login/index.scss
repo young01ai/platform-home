@@ -1,0 +1,18 @@
+.login-no-code,.login-doing{
+    font-size: 20px;
+    text-align: center;
+    padding-top: 20vh;
+    color: white;
+}
+
+.login-doing-a{
+    margin-left: 20px;
+    color: #89e5ca;
+    &:hover{
+        text-decoration: underline;
+    }
+}
+
+.ant-spin-dot-item{
+    background-color: #69C2B1 !important;
+  }

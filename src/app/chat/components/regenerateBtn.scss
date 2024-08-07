@@ -1,0 +1,43 @@
+.stop-generating {
+    cursor: pointer;
+    align-items: center;
+    border-radius: 4px;
+    display: inline-flex;
+    gap: 6px;
+    height: 36px;
+    padding: 8px;
+    position: relative;
+    margin-bottom: 16px;
+  }
+  
+  .stop-generating .regenerate {
+    height: 16px;
+    position: relative;
+    width: 16px;
+  }
+  
+  .stop-generating .union {
+    height: 14px;
+    left: 1px;
+    position: absolute;
+    top: 1px;
+    width: 14px;
+  }
+  
+  .stop-generating .div {
+    color: var(--gray-88);
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 0;
+    line-height: normal;
+    position: relative;
+    width: fit-content;
+  }
+  
+  .stop-generating.hover {
+    background-color: #d4d4d4;
+  }
+  
+  .stop-generating.default {
+    background-color: #e3e3e3;
+  }

@@ -1,0 +1,133 @@
+.icon-button {
+  display: inline-flex;
+  cursor: pointer;
+  overflow: hidden;
+  align-items: center;
+  justify-content: center;
+}
+
+.icon-button .history {
+  position: relative;
+}
+
+.icon-button .union {
+  left: 1px;
+  position: absolute;
+  top: 1px;
+}
+
+.icon-button .like {
+  height: 18px !important;
+  left: 7px !important;
+  position: absolute !important;
+  top: 7px !important;
+  width: 18px !important;
+}
+
+.icon-button.no {
+  border-radius: 4px;
+}
+
+.icon-button[disabled] {
+  cursor: not-allowed;
+  opacity: .4;
+}
+
+.icon-button:hover {
+  background-color: var(--gray-06);
+  border-radius: 20px;
+}
+
+.icon-button[data-hover-type="opacity"]:hover {
+  opacity: .88;
+}
+
+.icon-button.twenty {
+  height: 20px;
+  width: 20px;
+}
+
+.icon-button.thirty-two {
+  height: 32px;
+  width: 32px;
+}
+
+.icon-button.twenty-eight {
+  height: 28px;
+  width: 28px;
+}
+
+.icon-button[data-selected="true"] {
+  background-color: #ffe6b899;
+  color: #FF7A00;
+  border-radius: 20px;
+}
+
+.icon-button.thirty-two-round {
+  height: 32px;
+  position: relative;
+  width: 32px;
+}
+
+.icon-button.yes.twenty {
+  background-color: var(--ch-2);
+  border-radius: 4px;
+}
+
+.icon-button.yes.thirty-two {
+  background-color: var(--gray-12);
+  border-radius: 4px;
+}
+
+.icon-button.yes.twenty-eight {
+  background-color: var(--gray-06);
+  border-radius: 4px;
+}
+
+.icon-button.thirty-two-round .history {
+  height: 16px;
+  left: 7px;
+  top: 7px;
+  width: 16px;
+}
+
+.icon-button.thirty-two .history {
+  height: 18px;
+  left: 7px;
+  top: 7px;
+  width: 18px;
+}
+
+.icon-button.twenty .history {
+  height: 16px;
+  left: 2px;
+  top: 2px;
+  width: 16px;
+}
+
+.icon-button.twenty-eight .history {
+  height: 16px;
+  left: 6px;
+  top: 6px;
+  width: 16px;
+}
+
+.icon-button.thirty-two-round .union {
+  height: 16px;
+  width: 14px;
+}
+
+.icon-button.thirty-two .union {
+  height: 16px;
+  width: 16px;
+}
+
+.icon-button.twenty .union {
+  height: 13px;
+  width: 14px;
+}
+
+.icon-button.twenty-eight .union {
+  height: 14px;
+  width: 14px;
+}

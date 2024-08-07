@@ -1,0 +1,56 @@
+{
+  "name": "friday-next",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "serve": "npx serve@latest out",
+    "analyze": "npx cross-env ANALYZE=true next build"
+  },
+  "dependencies": {
+    "@ant-design/icons": "^5.2.6",
+    "@lottiefiles/lottie-player": "^2.0.4",
+    "@microsoft/fetch-event-source": "^2.0.1",
+    "@nextui-org/react": "^2.1.13",
+    "@svgr/webpack": "^8.1.0",
+    "agora-rtc-sdk-ng": "^4.21.0",
+    "antd": "^5.7.0",
+    "autoprefixer": "10.4.14",
+    "aws-amplify": "^5.3.11",
+    "eslint": "8.43.0",
+    "eslint-config-next": "13.4.7",
+    "framer-motion": "^10.16.4",
+    "hark": "^1.2.3",
+    "i18next": "^23.7.6",
+    "particles-bg": "^2.5.5",
+    "postcss": "8.4.24",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "react-i18next": "^13.5.0",
+    "react-markdown": "^9.0.0",
+    "react-syntax-highlighter": "^15.5.0",
+    "rehype-katex": "^7.0.0",
+    "remark-breaks": "^4.0.0",
+    "remark-emoji": "^4.0.0",
+    "remark-gfm": "^4.0.0",
+    "remark-images": "^4.0.0",
+    "remark-math": "^6.0.0",
+    "sass": "^1.63.6",
+    "swr": "^2.2.0",
+    "tailwindcss": "3.3.2",
+    "zustand": "^4.4.3"
+  },
+  "devDependencies": {
+    "@ant-design/static-style-extract": "^1.0.1",
+    "@next/bundle-analyzer": "^13.5.6",
+    "express": "^4.18.2",
+    "http-proxy-middleware": "^2.0.6",
+    "next": "13.4.7"
+  },
+  "browserslist": [
+    "> 0.2% and not dead"
+  ]
+}

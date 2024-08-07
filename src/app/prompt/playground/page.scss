@@ -1,0 +1,189 @@
+.playground{
+    height: calc(100vh - 56px);
+    display: flex;
+    .playground-left-menu{
+        flex: 0 1 auto;
+        position: relative;
+        .ant-menu-root {
+            height: 100%;
+        }
+    }
+    .playground-header{
+        position: relative;
+        height: 48px;
+        line-height: 48px;
+        .playground-title{
+            border: none;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 590;
+            text-align: center;
+            // .ant-input{
+            //     border: none;
+            //     font-size: 16px;
+            //     font-style: normal;
+            //     font-weight: 590;
+            //     text-align: center;
+            // }
+        }
+        .playground-header-right-op{
+            position: absolute;
+            right: 12px;
+            top: 0;
+            white-space: nowrap;
+            > * {
+                margin-right: 12px;
+            }
+        }
+    }
+    .playground-content{
+        width: 100%;
+        height: 100%;
+        .h2-title{
+            padding: 16px 24px;
+            border-bottom: 1px solid rgb(66, 66, 66);
+        }
+    }
+    .playground-main{
+        display: flex;
+        flex: 1 1 auto;
+        padding: 12px;
+        box-sizing: border-box;
+        height: calc(100% - 48px);
+        background-color: var(--gray-04);
+        > div {
+            max-height: calc(100%);
+            overflow: auto;
+        }
+    }
+    .system-prompt{
+        border-radius: 4px;
+        background-color: var(--white-100);
+        .h3-title{
+            color: var(--gray-88, rgba(0, 0, 0, 0.88));
+            font-size: 13px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: normal;
+            text-transform: uppercase;
+        }
+        display: flex;
+        flex-flow: column;
+        flex: 3 3 auto;
+        padding: 20px;
+        margin-right: 8px;
+        .system-prompt-input{
+            margin-top: 16px;
+            height: calc(100% - 88px) !important;
+            border: none;
+            padding: 0;
+            resize: none;
+        }
+    }
+    .main-prompt{
+        border-radius: 4px;
+        display: flex;
+        flex-flow: column;
+        flex: 7 7 auto;
+        background-color: var(--white-100);
+        padding: 20px;
+        .main-prompt-bottom{
+            position: sticky;
+            bottom: -20px;
+            padding: 20px 0;
+            background-color: #fff;
+            margin-top: 40px;
+            > .main-prompt-button {
+                margin-right: 8px;
+            }
+        }
+        .main-prompt-top{
+            margin-bottom: 20px;
+            color: white;
+            .main-prompt-button{
+                margin-left: 20px;
+            }
+        }
+    }
+    .main-control{
+
+        border-radius: 4px;
+        background-color: var(--white-100);
+        flex: 2 0 194px;
+        padding: 0 20px;
+    }
+    .title-h3{
+        color: var(--gray-88);
+        font-size: 13px;
+        font-weight: 400;
+        left: 0;
+        letter-spacing: 0;
+        line-height: normal;
+    }
+    .title-h3-mt{
+        margin-top: 24px;
+    }
+    .mr12{
+        margin-left: 12px;
+    }
+}
+.history-dropdown{
+    max-height: 268px;
+    overflow: auto;
+    box-shadow: 0 0 24px #bfbfbf;
+    .history-dropdown-item{
+        display: flex;
+        align-items: center;
+        .dropdown-item-title-h3{
+            padding: 4px 20px;
+            font-weight: bold;
+            font-size: 14px;
+            color: #bfbfbf;
+            border-bottom: 1px dashed rgba(255,255,255, .6);
+            flex: 1;
+            text-align: center;
+        }
+        .dropdown-item-desc{
+            font-size: 12px;
+            color: #8c8c8c;
+        }
+        .dropdown-item-content{
+            flex: 1;
+        }
+        .love-btn{
+            flex: 0;
+        }
+    }
+}
+
+.show-md-modal{
+    .ant-modal-content{
+        padding: 0!important;
+        overflow: hidden;
+    }
+    .ant-modal-confirm-content{
+        width: 100%;
+    }
+    .markdown-container{
+        width: 100%;
+        padding: 0;
+        margin: 0;
+    }
+    .code-container{
+        margin: 0 !important;
+        ::-webkit-scrollbar-track {
+            background-color: rgb(245, 242, 240) !important;
+        }
+        ::-webkit-scrollbar {
+            height: 6px !important;
+        }
+    }
+    .ant-modal-confirm-btns{
+        padding: 12px;
+        background-color: rgb(245, 242, 240);
+        margin-top: 0;
+    }
+    .ant-modal-confirm-paragraph{
+        max-width: 100% !important;
+    }
+}

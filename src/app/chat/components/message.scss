@@ -1,0 +1,135 @@
+
+#image {
+    width: 80vh;
+
+    img {
+        width: 100%;
+    }
+}
+
+.pd0 {
+    padding: 0 !important;
+}
+
+.message-user-container {
+    word-break: break-all;
+    display: flex;
+    align-items: flex-start;
+    padding: 20px;
+    position: relative;
+    background-color: var(--white-100);
+    .file-content-wrapper {
+        cursor: pointer;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        min-width: 180px;
+        margin-bottom: 12px;
+    }
+    .file-name{
+        margin-left: 6px;
+        font-size: 16px;
+    }
+}
+
+.message-user-container .user-icon {
+    pointer-events: none;
+    user-select: none;
+    flex: 0 0 32px;
+    margin:0 12px;
+    position: relative;
+    width: 32px;
+    height: 32px;
+    line-height: 32px;
+    font-size: 14px;
+    border-radius: 50%;
+    text-align: center;
+    overflow: hidden;
+    color: var(--white-100);
+    background: linear-gradient(180deg, rgb(192, 221, 214) 0%, rgb(105, 194, 177) 100%);
+}
+
+.message-user-container .text-wrapper {
+    position: relative;
+    flex: 1;
+    font-weight: 400;
+    color: var(--gray-88);
+    font-size: 16px;
+    letter-spacing: 0;
+    line-height: 24px;
+    white-space: pre-wrap;
+}
+
+.message-assistant-container {
+    text-align: justify;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 20px 20px 8px 20px;
+    position: relative;
+    background-color: var(--gray-04);
+    border-radius: 4px;
+    .model-icon-wrapper{
+        text-align: center;
+        align-self: flex-start;
+        position: relative;
+        width: 32px;
+        height: 32px;
+        line-height: 32px;
+        font-size: 0;
+        border-radius: 50%;
+        margin:0 12px;
+        background: linear-gradient(270deg, #0F4037 0%, #155849 100%);
+    }
+    .model-icon {
+        display: inline-block;
+        width: 16px;
+        height: 16px;
+        background-size: contain;
+    }
+    .message-assistant-content {
+        position: relative;
+        font-weight: 400;
+        color: var(--gray-88);
+        font-size: 16px;
+        letter-spacing: 0;
+        line-height: 24px;
+        flex: 1;
+        .bottom-btn{
+            margin-left: -6px;
+            margin-top: 16px;
+            > * {
+                margin-right: 10px;
+            }
+        }
+    }
+}
+
+.message-list .ant-checkbox-wrapper{
+    position: absolute;
+    left: -30px;
+    top: 27px;
+}
+
+.message-list, .message-content-wrapper{
+    width: 100%;
+}
+
+.result-streaming>.cursor {
+    animation: blink 1s steps(5,start) infinite;
+    margin-left: .25rem;
+    vertical-align: baseline;
+    display: inline-block;
+    width: 6px;
+    height: 18px;
+    background-color: var(--gray-88);
+    position: relative;
+    top: 4px;
+    
+}
+
+@keyframes blink {
+    to {
+        visibility: hidden
+    }
+  }

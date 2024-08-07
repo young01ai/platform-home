@@ -1,0 +1,112 @@
+// Path: src/pages/assistant.scss
+@import '@/scss/rtl.scss';
+
+// 针对rtl布局的字体样式 增加字体system-ui
+.global-box {
+    @include body {
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial,
+            'Noto Sans', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol',
+            'Noto Color Emoji' !important;
+    }
+}
+
+// 发起会话的按钮图标处理
+.send-btn {
+    @include body {
+        transform: scaleX(-1);
+    }
+}
+
+.send-btn {
+    @include main {
+        transform: scaleX(-1);
+    }
+}
+
+// 会话列表的icon处理
+.items-icon {
+    @include body {
+        transform: scaleX(-1);
+    }
+}
+
+// 会话列表的item编辑icon处理
+.items-edit-icon {
+    @include body {
+        transform: scaleX(-1);
+    }
+}
+
+// 会话列表的item的聊天图标处理
+.flex-shrink-0 {
+    @include body {
+        transform: scaleX(-1);
+    }
+}
+
+// 对话框GPT的icon头像与会话内容的间距处理
+.ml-auto {
+    @include body {
+        margin-left: unset;
+        margin-right: auto;
+    }
+}
+
+.ml-auto {
+    @include main {
+        margin-left: unset;
+        margin-right: auto;
+    }
+}
+
+.ar-prompt-text {
+    @include body {
+        text-align: right;
+    }
+}
+
+.ar-prompt-text {
+    @include main {
+        text-align: right;
+    }
+}
+
+.text-desc {
+    @include body {
+        text-align: right;
+    }
+}
+
+.text-desc {
+    @include main {
+        text-align: right;
+    }
+}
+
+.content-copy-icon {
+    @include body {
+        transform: scaleX(-1);
+    }
+
+    @include main {
+        transform: scaleX(-1);
+    }
+}
+
+.content-share-icon {
+    @include body {
+        transform: scaleX(-1);
+    }
+
+    @include main {
+        transform: scaleX(-1);
+    }
+}
+
+// 顶部语言切换的文字处理
+.language-name {
+    @include bodyAr {
+        margin-right: 0;
+        margin-left: 15px;
+    }
+}

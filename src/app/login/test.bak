@@ -1,0 +1,96 @@
+
+
+// // Example POST method implementation:
+// async function postData(url = "", data = {}) {
+//   // Default options are marked with *
+//   const response = await fetch(url, {
+//     method: "POST", // *GET, POST, PUT, DELETE, etc.
+//     headers: {
+//       "Content-Type": "application/json",
+//       // 'Content-Type': 'application/x-www-form-urlencoded',
+//     },
+//     body: JSON.stringify(data), // body data type must match "Content-Type" header
+//   });
+//   return response.json(); // parses JSON response into native JavaScript objects
+// }
+
+// import useSWR from 'swr'
+// import React, { useEffect } from 'react'
+// import Script from 'next/script'
+// import { useRouter } from 'next/router'
+
+// const redirect_uri = `http://127.0.0.1:4000/login`
+
+
+
+// const Page = ({
+//   searchParams
+// }) => {
+
+//   if(searchParams.code){
+//     console.log('!!!')
+//     const fetcher = (url) => postData(url, {
+//       grant_type: 'authorization_code',
+//       client_id: 'cli_a4178399d97a1013',
+//       client_secret: '08V4CQD45KJ76AHpZ8C5BdCPaBMhYVM6',
+//       code: searchParams.code,
+//       redirect_uri: redirect_uri,
+//     })
+//     const { data = {}, error, isLoading } = useSWR(
+//       'http://127.0.0.1:4000/qrLogin',
+//       // 'http://127.0.0.1:4000/token',
+//       fetcher
+//     )
+
+//     console.log('data', data, error)
+//     const rt = fetch('http://127.0.0.1:4000/userinfo', {
+//       method: "GET", // *GET, POST, PUT, DELETE, etc.
+//       headers: {
+//         "Content-Type": "application/json",
+//         "Authorization": `Bearer ${data.access_token}`
+//         // 'Content-Type': 'application/x-www-form-urlencoded',
+//       },
+//     })
+
+//     console.log(rt)
+//   }
+  
+//   return (
+//     <div>
+//       <div id="login_container"></div>
+//       <Script src="https://sf3-cn.feishucdn.com/obj/feishu-static/lark/passport/qrcode/LarkSSOSDKWebQRCode-1.0.2.js" onReady={() => {
+//         var QRLoginObj = QRLogin({
+//             id:"login_container",
+//             goto: "https://passport.feishu.cn/suite/passport/oauth/authorize?client_id=cli_a4178399d97a1013&redirect_uri=http%3A%2F%2F127.0.0.1%3A4000%2Flogin&response_type=code&state=STATE",
+//             width: "500",
+//             height: "500",
+//             style: "width:500px;height:600px"//可选的，二维码html标签的style属性
+//         });
+
+//         console.log(QRLoginObj)
+
+//         var handleMessage = function (event) {        
+//           var origin = event.origin;    
+//           // 使用 matchOrigin 方法来判断 message 来自页面的url是否合法
+//           if( QRLoginObj.matchOrigin(origin) ) {           
+//               var loginTmpCode = event.data; 
+//               console.log(event)
+//               // 在授权页面地址上拼接上参数 tmp_code，并跳转
+//               window.location.href = `https://passport.feishu.cn/suite/passport/oauth/authorize?client_id=cli_a4178399d97a1013&redirect_uri=http%3A%2F%2F127.0.0.1%3A4000%2Flogin&response_type=code&state=STATE&tmp_code=${loginTmpCode}`;
+//           }
+//       };
+//       if (typeof window.addEventListener != 'undefined') {   
+//           window.addEventListener('message', handleMessage, false);} 
+//       else if (typeof window.attachEvent != 'undefined') { 
+//           window.attachEvent('onmessage', handleMessage);
+//       }
+//       }} />
+//     </div>
+//   )
+// }
+
+const Page = () => {
+  return <div>test</div>
+}
+
+export default Page

@@ -1,0 +1,25 @@
+@mixin main {
+  main[data-lang="ar"] & {
+    @content;
+  }
+}
+
+@mixin body {
+  body[data-lang="ar"] & {
+    @content;
+  }
+
+  body[data-lang="enAr"] & {
+    @content;
+  }
+
+  body[data-lang="zhAr"] & {
+    @content;
+  }
+}
+
+@mixin bodyAr {
+  body[data-lang="ar"] & {
+    @content;
+  }
+}

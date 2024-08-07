@@ -1,0 +1,72 @@
+.file-upload-container{
+    display: inline-block;
+    .file-upload-icon{
+        width: 80px;
+        height: 80px;
+        border-radius: 4px;
+        cursor: pointer;
+        border: 1px solid rgba(255, 255, 255, 0.2);
+        margin-bottom: 8px;
+    }
+    .file-upload-input{
+        display: none;
+    }
+    .file-uploading,.file-uploaded{
+        width: 80px;
+        height: 80px;
+        font-size: 12px;
+        border-radius: 4px;
+        text-align: center;
+        padding-top: 12px;
+        border: 1px solid rgba(255, 255, 255, 0.2);
+        margin-bottom: 8px;
+        display: inline-block;
+    }
+    .file-uploaded[data-accept="application/pdf"]{
+        background-image: url('/assets/pdf.svg');
+        background-size: cover;
+    }
+    
+    .upload-img-item-wrapper{
+        display: inline-block;
+        position: relative;
+        vertical-align: top;
+        &:hover{
+            .upload-img-delete{
+                display: block;
+            }
+        }
+    }
+    .upload-img-delete{
+        cursor: pointer;
+        color: #fff;
+        font-size: 12px;
+        position: absolute;
+        top: 0;
+        right: -8px;
+        display: none;
+        background-color: rgba(0,0,0,.8);
+        width: 18px;
+        height: 18px;
+        line-height: 18px;
+        box-sizing: border-box;
+        border-radius: 50%;
+        text-align: center;
+    }
+}
+
+.y-modal{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    top: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(20px) brightness(100%);
+    text-align: center;
+    z-index: 999;
+    > img {
+        margin: auto;
+        padding-top: 10%;
+    }
+}

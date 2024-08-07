@@ -1,0 +1,26 @@
+.markdown-body{
+    .no-language-code{
+        background: black;
+        color: #fff;
+        border-radius: 6px;
+    }
+    .code-container{
+        width: 660px;
+        position: relative;
+        background-color: black;
+        padding: 4px 8px;
+        border-radius: 6px;
+        .code-header{
+            border-bottom: 1px solid rgb(245, 242, 240);
+            padding-bottom: 4px;
+            margin-bottom: 8px;
+            color: #fff;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            a {
+                cursor: pointer;
+            }
+        }
+    }
+}

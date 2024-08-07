@@ -1,0 +1,88 @@
+.user-info-header{
+    position: relative;
+    white-space: nowrap;
+    font-size: 14px;
+    font-weight: 400;
+
+    .user-info-icon-default{
+        width: 28px;
+        height: 28px;
+        border-radius: 50%;
+        overflow: hidden;
+    }
+
+    .user-info-icon{
+        pointer-events: none;
+        user-select: none;
+        flex: 0 0 32px;
+        margin-right: 8px;
+        position: relative;
+        width: 32px;
+        height: 32px;
+        line-height: 32px;
+        font-size: 14px;
+        border-radius: 50%;
+        text-align: center;
+        overflow: hidden;
+        color: var(--white-100);
+        background: linear-gradient(180deg,#c0ddd6,#69c2b1);
+    }
+    .user-info-container{
+        display: flex;
+        gap: 8px;
+        align-items: center;
+        cursor: pointer;
+        padding: 8px 12px;
+        font-weight: 700;
+    }
+    .user-info-hover{
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        right: -12px;
+        width:248px;
+        border-radius: 4px;
+        border: 1px solid rgba(0, 0, 0, 0.12);
+        box-shadow: 0px 2px 10px 0px rgba(0, 0, 0, 0.06), 0px 4px 16px 0px rgba(0, 0, 0, 0.08);
+        background: white;
+        .user-info-hover-item{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            gap: 8px;
+            color: rgba(0, 0, 0, 0.88);
+            &.user-info-hover-item-user-info{
+                padding: 16px 32px 16px 16px;
+                border-bottom: 1px solid rgba(0, 0, 0, 0.12);
+                .user-info-text{
+                    overflow: hidden;
+                    flex: 1;
+                    .user-info-name{
+                        font-size: 16px;
+                        font-weight: 600;
+                        overflow: hidden;
+                        text-overflow: ellipsis;
+                    }
+                    .user-info-login{
+                        color: rgba(0, 0, 0, 0.6);
+                        overflow: hidden;
+                        text-overflow: ellipsis;
+                    }
+                }
+            }
+            &.user-info-hover-item-log-out{
+                cursor: pointer;
+                margin: 8px;
+                padding: 12px;
+                &:hover{
+                    background-color: rgba(0, 0, 0, 0.06);
+                }
+            }
+        }
+    }
+    &[data-login="true"]:hover {
+        .user-info-hover{
+            display: flex;
+        }
+    }
+}
